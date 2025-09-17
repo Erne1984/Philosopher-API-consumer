@@ -1,0 +1,26 @@
+:root {
+  /* Your default theme */
+  --background: white;
+  --foreground: black;
+  --text-color: black;
+  --primary-color: #e8c468;
+}
+
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+  --text-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1400px;
+  padding: 1rem;
+  margin: 0 auto;
+}

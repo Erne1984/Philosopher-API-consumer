@@ -1,0 +1,16 @@
+.container {
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--primary-color);
+}
+
+.nav-button {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
