@@ -1,13 +1,14 @@
 :root {
-  /* Your default theme */
   --background: white;
   --foreground: black;
   --text-color: black;
   --primary-color: #e8c468;
+
+  --max-width: 1400px;
 }
 
 [data-theme="dark"] {
-  --background: black;
+  --background: #121212;
   --foreground: white;
   --text-color: white;
 }
@@ -20,7 +21,7 @@
 }
 
 body {
-  max-width: 1400px;
-  padding: 1rem;
   margin: 0 auto;
+  background: var(--background);
+  color: var(--text-color);
 }
