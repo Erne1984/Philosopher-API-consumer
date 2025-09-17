@@ -1,7 +1,9 @@
 :root {
-  --background: white;
+  --background: #fafafa;
+  --secondary-color: #f5f5f5; 
   --foreground: black;
   --text-color: black;
+  --secondary-text-color: #6b6b6b; 
   --primary-color: #e8c468;
 
   --max-width: 1400px;
@@ -9,9 +11,12 @@
 
 [data-theme="dark"] {
   --background: #121212;
+  --secondary-color: #181C24;
   --foreground: white;
   --text-color: white;
+  --secondary-text-color: #a0a0a0;  
 }
+
 
 * {
   padding: 0;
