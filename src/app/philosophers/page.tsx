@@ -1,13 +1,22 @@
+"use client";
+
 import Link from "next/link";
 
-export default function philosophersPage() {
+import { usePhilosophers } from "../hooks/usePhilosphers";
+import { Philosopher } from "../types/philosopher";
 
-    return(
-        <div>
+export default function PhilosophersPage() {
+  const { data, isLoading, isError } = usePhilosophers();
 
-            <h2>Olá filósofos!</h2>
+  const philosophers = data?.data.content;
 
-            <Link href="/">Home</Link>
-        </div>
-    )
-} 
+  return (
+    <div>
+      <ul>
+        {philosophers?.map((p: Philosopher) => (
+          <li key={p.id}>{p.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
