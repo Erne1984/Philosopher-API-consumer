@@ -3,7 +3,7 @@ import { PhilosophersApiResponse } from "../types/philosopher";
 
 export const philosophersService = {
   async getPhilosophers() {
-    const { data } = await api.get<PhilosophersApiResponse>("/philosophers");
+    const { data } = await api.get<PhilosophersApiResponse>("/philosophers?size=3");
     return data;
   },
 

@@ -1,0 +1,60 @@
+.philosopher-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card {
+  background: var(--secondary-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img-box {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  margin-bottom: 0.75rem;
+}
+
+.card-bio {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 0.95rem;
+  color: var(--text-color);
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: var(--secondary-text-color);
+}
